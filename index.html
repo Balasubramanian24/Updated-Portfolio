@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balasubramanian P | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="style.css">
     <link rel="script" href="script.js">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Port<span>folio</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <!-- Brand Logo -->
+            <a class="navbar-brand" href="#">Port<span class="text-primary">folio</span></a>
+    
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+    
+            <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
@@ -29,28 +35,34 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav>    
 
     <!-- Home Section -->
     <section id="home" class="bg-light py-5 section" data-aos="fade-up">
         <div class="container text-center">
             <h1 class="typewriter text-primary display-4 fw-bold"></h1>
-            <p class="lead">A passionate Web Developer with expertise in Full Stack Development.</p>
+            <p class="lead">A passionate Web Developer with expertise in FullStack (MERN) Development.</p>
             <div class="mt-4">
-                <a href="#projects" class="btn btn-primary btn-m">View My Work</a>
-                <a href="#contact" class="btn btn-outline-secondary btn-m">Contact Me</a>
+                <a href="assests/images/Bala_Resume.pdf" class="btn btn-warning btn-sm" download>
+                    Download Resume
+                </a>
+                <a href="#projects" class="btn btn-primary btn-sm">View My Work</a>
+                <a href="#contact" class="btn btn-outline-secondary btn-sm">Contact Me</a>
             </div>
         </div>
     </section>
+   
 
     <!-- About Section -->
     <section id="about" class="py-5 section" data-aos="fade-left">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-12">
                     <h2 class="text-warning">About Me</h2>
-                    <p>I am a web developer with experience in HTML, CSS, Bootstrap, JavaScript, NodeJs and ReactJS. I love building responsive and user-friendly web applications.</p>
-                    <p>In my previous role, I worked on front-end development and collaborated with teams to deliver exceptional results.</p>
+                    <p>I am a Full-Stack Web Developer with a passion for building dynamic and user-friendly applications. I developed an eye for detail and structured design. During my second year in that role, I completed a Front-End Development course, which sparked my transition into web development.</p>
+                    <p>I have since expanded my expertise by completing a Full-Stack Web Development course, where I honed my skills in HTML, CSS, Bootstrap, JavaScript, React.js, Node.js, Express, and PostgreSQL.</p>
+                    <p>** Currently, I specialize in MERN stack development, integrating MongoDB, Express, React, and Node.js to create scalable and efficient web applications. My recent work includes developing a Project Management Task application featuring Redux, Tailwind, Headless UI, user authentication, real-time collaboration (Socket.IO), and advanced task management.</p>
+                    <p>I am passionate about solving real-world problems through technology, focusing on scalability, user experience, and performance optimization. My goal is to build impactful applications that enhance productivity and user engagement.</p>
                 </div>
             </div>
         </div>
@@ -66,8 +78,9 @@
                     <div class="card h-100">
                         <img src="assests/images/To-do icon.png" class="card-img-top" alt="Project 1" style="width: 15%;">
                         <div class="card-body">
-                            <h5 class="card-title">To-do List Application</h5>
+                            <h5 class="card-title">Notes Buddy</h5>
                             <p class="card-text">A simple, user-friendly application to help you manage your daily tasks efficiently. This project is built to demonstrate basic CRUD functionality and responsive design, making it accessible across devices.</p>
+                            <a href="https://notesbuddyin.netlify.app/" target="_blank" class="btn btn-primary">Live Demo</a>
                             <a href="https://github.com/Balasubramanian24/todo-list-Javascript" class="btn btn-primary" target="_blank">View Project</a>
                         </div>
                     </div>
@@ -77,8 +90,9 @@
                     <div class="card h-100">
                         <img src="assests/images/weather icon.png" class="card-img-top" alt="Project 1" style="width: 15%;">
                         <div class="card-body">
-                            <h5 class="card-title">Weather Application</h5>
+                            <h5 class="card-title">Actual Weather</h5>
                             <p class="card-text">A user-friendly weather application that allows users to search for current weather conditions in any city around the globe. Built using HTML, CSS, and JavaScript, this app fetches data from the OpenWeather API.</p>
+                            <a href="https://actualweatherin.netlify.app/" target="_blank" class="btn btn-primary">Live Demo</a>
                             <a href="https://github.com/Balasubramanian24/WeatherApplication" class="btn btn-primary" target="_blank">View Project</a>
                         </div>
                     </div>
@@ -88,9 +102,10 @@
                     <div class="card h-100">
                         <img src="assests/images/shop icon.webp" class="card-img-top" alt="Project 1" style="width: 15%;">
                         <div class="card-body">
-                            <h5 class="card-title">E-commerce Shopping Website</h5>
+                            <h5 class="card-title">Shopeasy</h5>
                             <p class="card-text">This is a fully responsive e-commerce website built with ReactJS and styled using Bootstrap. The website utilizes the DummyJSON API for fetching product data and includes features such as product categories, individual product details, and a shopping cart.</p>
-                            <a href="https://github.com/Balasubramanian24/ecommerce-website-ReactJs" class="btn btn-primary" target="_blank">View Project</a>
+                            <a href="https://shopeasyin.vercel.app/" target="_blank" class="btn btn-primary">Live Demo</a>
+                            <a href="https://github.com/Balasubramanian24/ShoppingCart_ReactJs" class="btn btn-primary" target="_blank">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -130,6 +145,10 @@
                 <div class="col-md-3 text-center">
                     <i class="fab fa-node fa-3x text-success"></i>
                     <p class="mt-2">Node.js</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="devicon-mongodb-plain colored fa-3x"></i>
+                    <p class="mt-2">MongoDB</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <i class="fas fa-database fa-3x text-primary"></i>
